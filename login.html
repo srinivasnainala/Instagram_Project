@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_Page</title>
+    <style>
+        .username
+        {
+            padding: 6px 25px;
+            font-size: 15px;
+        }
+        .password
+        {
+            padding: 6px 25px;
+            font-size: 15px;
+        }
+        .login_button
+        {
+            border-radius: 15px;
+            border-color: rgb(255, 0, 85);
+            background-color: rgb(255, 0, 85);
+            margin-left: 70px;
+            margin-top: 10px;
+            color: white;
+            padding: 7px 20px;
+            display: inline-block;
+        }
+        .login_button:hover
+        {
+            border-color: rgb(189, 5, 66);
+            background-color: rgb(189, 5, 66);
+            color: white;
+        }
+        .logo
+        {
+            height: 60px;
+            width: 60px;
+            margin-left: 640px;
+            margin-top: 150px;
+            border-radius: 20%;
+        }
+        .a
+        {
+            margin-left: 560px;
+            display: inline-block;
+        }
+    </style>
+    <script>
+        function login()
+        {
+            const user="vasu";
+            const pass="vasu1234";
+            const username=document.getElementById("username").value;
+            const password=document.getElementById("password").value;
+            if(username.length=="")
+        {
+            alert("please enter username");
+            return;
+        }
+        else if(username!=user)
+        {
+            alert("user not found");
+            return;
+        }
+        else if(username!=user||pass!=password)
+        {
+            alert("username or password incorrect");
+            return;
+        }
+        else if(username==user&&pass==password)
+        {
+            alert("Successfully logined");
+            window.location.href="/home/miracle/Desktop/html_Practise/Instagram/Insta_feed.html";
+        }
+        }
+    </script>
+</head>
+<body>
+    <img src="/home/miracle/Desktop/html_Practise/Instagram/logo.jpg" alt="logo" class="logo"><br>
+    <label for="Login" style="margin-left: 500px;font-weight: bold;">Login:</label>
+    <input type="text" placeholder="enter username" style="margin-top: 50px;" class="username" id="username"><br>
+    <label for="Password" style="margin-left: 477px;font-weight: bold;">Password:</label>
+    <input type="password" placeholder="enter password" style="margin-top: 30px;" class="password" id="password"><br>
+    <a href="" class="a">forget_password</a>
+    <input type="button" value="Login" onclick="login()" class="login_button">
+</body>
+</html>

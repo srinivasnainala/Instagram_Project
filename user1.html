@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user1</title>
+    <style>
+        .head
+        {
+            display: grid;
+            grid-template-columns: 20px 200px 20px ;
+        }
+        .account
+        {
+            display: grid;
+            grid-template-columns: 40px 120px ;
+        }
+        .status
+        {
+            display: grid;
+            grid-template-columns: 40px 40px 60px;
+        }
+        .data
+        {
+            display: grid;
+            grid-template-columns: 30px 50px 40px;
+        }
+        .about
+        {
+            display: grid;
+            grid-template-columns: 100px;
+        }
+        .follow
+        {
+            margin-left: 450px;
+            text-align: center;
+            padding: 4px 50px;
+            color: white;
+            background-color: grey;
+            border-color: grey;
+            border: none;
+            cursor: pointer;
+        }
+        .follow:hover
+        {
+            border-color:rgb(202, 0, 0);
+            background-color: rgb(202, 0, 0);
+            color: white;
+        }
+        .posts
+        {
+            display: grid;
+            grid-template-columns: 40px;
+        }
+    </style>
+    <script>
+        function back()
+        {
+            window.location.href="/home/miracle/Desktop/html_Practise/Instagram/Insta_feed.html";
+        }
+        function message()
+        {
+            alert("Work in progress");
+        }
+        function viewFollowlist()
+        {
+            alert("Work in progress");
+        }
+        function viewFollowers()
+        {
+            alert("Work in progress");
+        }
+    </script>
+</head>
+<body>
+    <div class="head">
+    <input type="button" onclick="back()" style="cursor: pointer; margin-left: 450px;width: 30px; background-color: transparent;border: none;font-size: 20px;" value="&#x2B05;">
+    <p style="margin-left: 470px">Vasu_Nainala</p>
+    <input type="button" onclick="share()" style="cursor: pointer; margin-left: 500px;width: 30px; background-color: transparent;border: none;font-size: 20px;"  value="&#10148;">
+    </div>
+    <div class="account">
+     <img style="border-radius: 50%;height: 55px;width: 55px;margin-left: 450px;" src="/home/miracle/Desktop/html_Practise/Instagram/vasu.jpg" alt="">
+     <div class="status">
+        <input type="button" value="1" style=" margin-left: 500px;margin-bottom: 0px; width: 30px; background-color: transparent;border: none;font-size: 20px;" onclick="share()" >
+        <input type="button" value="15" style="margin-left: 540px;margin-bottom: 0px;width: 30px; background-color: transparent;border: none;font-size: 20px;" onclick="share()" >
+        <input type="button" value="300" style=" margin-left: 560px;margin-bottom: 0px;width: 80px; background-color: transparent;border: none;font-size: 20px;" onclick="share()" >
+    </div>
+    <div class="data">
+        <input type="button" style="margin-left: 540px;margin-top: -17px;font-size: 15px;cursor: pointer;background-color: transparent;border: none;width: 50px;" value="posts">
+        <input type="button" style="margin-left: 575px;margin-top: -17px;font-size: 15px;cursor: pointer;background-color: transparent;border: none;width: 80px;" value="Following" onclick="viewFollowlist()">
+        <input type="button" style="margin-left: 610px;margin-top: -17px;font-size: 15px;cursor: pointer;background-color: transparent;border: none;width: 80px;" value="Followers" onclick="viewFollowers()">
+    </div>
+    </div>
+   <div class="about">
+    <p style="margin-left: 450px;margin-top: 10px;">Vasu_Nainala</p>
+   </div>
+   
+   <input class="follow" type="button" value="Follow" style="margin-left: 450px;text-align: center;padding: 4px 50px;color: white;background-color: grey;border-color: grey;border: none;">
+   <input class="Message" type="button" value="Message" style="cursor: pointer; margin-left: 10px;text-align: center;padding: 4px 50px;color: white;background-color: grey;border-color: grey;border: none;" onclick="message()">
+   <div class="posts">
+    <img style="margin-left: 430px;height: 155px;width: 160px;margin-top: 5px;" src="/home/miracle/Desktop/html_Practise/Instagram/vasu1.jpg" alt="">
+    </div>
+</body>
+</html>

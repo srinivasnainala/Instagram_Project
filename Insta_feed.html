@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insta_Feed</title>
+    <style>
+        .head
+        {
+            display: grid;
+            grid-template-columns: 380px 40px 40px;
+        }
+        .stories
+        {
+            display: grid;
+            grid-template-columns: 90px 90px 90px 90px 90px;
+        }
+        .names
+        {
+            display: grid;
+            grid-template-columns: 20px 20px 20px 20px 20px;
+        }
+        .feed
+        {
+            display: grid;
+            grid-template-columns: 150px;
+            height: 200px;
+            width: 200px;
+            margin-bottom: 160px;
+        }
+        .feedown
+        {
+            display: grid;
+            grid-template-columns: 50px 300px;
+        }
+        .likes
+        {
+            display: grid;
+            grid-template-columns: 15px 20px 15px 100px;
+        }
+        .options
+        {
+            display: grid;
+            grid-template-columns: 60px  60px 60px 60px 60px;
+            background-color: rgb(161, 156, 145);
+            margin-left: 450px;
+            margin-right: 450px;
+            margin-top: 100px;
+        }
+    </style>
+    <script>
+        function share()
+        {
+            alert("Work In Progress");
+        }
+        function view1()
+        {
+            window.location.href="/home/miracle/Desktop/html_Practise/Instagram/kiran.jpg";
+        }
+        function view()
+        {
+            window.location.href="/home/miracle/Desktop/html_Practise/Instagram/user1.html";
+        }
+        function viewProfile()
+        {
+            window.location.href="/home/miracle/Desktop/html_Practise/Instagram/user1.html";
+        }
+        function viewProfile1()
+        {
+            window.location.href="/home/miracle/Desktop/html_Practise/Instagram/user2.html";
+        }
+        function message()
+        {
+            window.location.href="/home/miracle/Desktop/html_Practise/Instagram/message.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+    <div class="head">
+        <p style="display: inline-block;margin-left: 450px; font-size: 20px;font-weight: bold;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Instagram</p>
+        <input type="button" value="&#10084;" style="cursor: pointer; margin-left: 450px;background-color: transparent;border: none;height: 30px;width: 30px;margin-top: 25px;font-size: 25px;margin-right: 15px;" onclick="share()">
+        <input type="button" value="&#x1F4E9;" style="cursor: pointer; margin-left: 450px;background-color: transparent;border: none;height: 40px;width: 50px;margin-top: 15px;font-size: 25px;"  onclick="message()" >
+    </div> 
+    <div class="stories">
+        <img style="border-color: rgb(207, 33, 62); border-radius: 50%;height: 75px; width: 75px; margin-left: 450px;background-size: cover;" src="/home/miracle/Desktop/html_Practise/Instagram/vasu.jpg" alt="">
+        <img style="border-radius: 50%;height: 75px; width: 75px;margin-left: 455px;" src="/home/miracle/Desktop/html_Practise/pexels-nandor-nadhazi-6928092-16246071.jpg" alt="">
+        <img style="border-radius: 50%;height: 75px; width: 75px;margin-left: 460px;" src="/home/miracle/Desktop/html_Practise/Instagram/sai.jpg" alt="">
+        <img style="border-radius: 50%;height: 75px; width: 75px;margin-left: 465px;" src="/home/miracle/Desktop/html_Practise/pexels-ciro-palomba-1275986148-29126702.jpg" alt="">
+        <img style="border-radius: 50%;height: 75px; width: 75px;margin-left: 470px;" src="/home/miracle/Desktop/html_Practise/Instagram/vinay.jpg" alt="">
+    </div>   
+    <div class="names">
+        <input type="button" value="Your_story" onclick="view()" style="cursor: pointer; margin-left: 450px;margin-top: 5px; font-size: 15px; background-color: transparent;border: none;height: 25px;width: 80px;">
+        <input type="button" value="Kiran_nainala" onclick="view1()" style="cursor: pointer; margin-left: 520px;margin-top: 5px; font-size: 15px; background-color: transparent;border: none;height: 25px;width: 100px;">
+        <input type="button" value="sai_naidu" onclick="viewProfile1()" style="cursor: pointer; margin-left: 605px;margin-top: 5px; font-size: 15px; background-color: transparent;border: none;height: 25px;width: 80px;">
+        <input type="button" value="naveen_ryali" onclick="share()" style="cursor: pointer; margin-left: 665px;margin-top: 5px; font-size: 15px; background-color: transparent;border: none;height: 25px;width: 100px;">
+        <input type="button" value="vinay_dande" onclick="share()" style="cursor: pointer; margin-left: 750px;margin-top: 5px; font-size: 15px; background-color: transparent;border: none;height: 25px;width: 100px;">
+    </div>
+    <div class="feedown">
+        <img style="margin-left: 450px;margin-bottom: 10px; height: 30px;width: 30px; border-radius: 50%;" src="/home/miracle/Desktop/html_Practise/Instagram/feed1.jpg" alt="">
+        <input type="button" style="margin-left: 440px;font-size: 15px;background-color: transparent;border: none;width: 110px;cursor: pointer;" value="PawanKalyan" onclick="share()">
+    </div>
+    <div class="feed">
+     <img style="margin-left: 450px;height: 360px;width: 465px;margin-bottom: 20px;" src="/home/miracle/Desktop/html_Practise/Instagram/feed1.jpg" alt="">
+    </div>
+    <div class="likes">
+        <input type="button" value="&#10084;" style="cursor: pointer; margin-bottom: 20px; margin-left: 450px;font-size: 25px;margin-top: 20px;padding: 0px 35px 0px 0px;background-color: transparent;border: none;" onclick="share()">
+        <input type="button" value="&#x1F4AC;" style="cursor: pointer; margin-bottom: 20px; margin-left: 470px;font-size: 25px;margin-top: 20px;padding: 0px 35px 0px 0px;background-color: transparent;border: none;" onclick="share()">
+        <input type="button" value="&#x279A;" style="cursor: pointer; margin-bottom: 20px; margin-left: 490px;font-size: 30px;margin-top: 20px;padding: 0px 35px 0px 0px;background-color: transparent;border: none;" onclick="share()"><br>
+        <p style="display: inline-block;margin-left: 555px;width: 300px;margin-top: -45px;">liked by Vasu_Nainala and 34,749 others</p>
+    </div>
+    <div class="feedown">
+        <img style="margin-left: 450px;margin-bottom: 10px; height: 30px;width: 30px; border-radius: 50%;" src="/home/miracle/Desktop/html_Practise/Instagram/IMG_20211025_153412_334.jpg" alt="">
+        <input type="button" style="cursor: pointer; margin-left: 440px;font-size: 15px;background-color: transparent;border: none;width: 100px;" value="Rocky_Bhai"  onclick="share()">
+    </div>
+    <div class="feed">
+     <img style="margin-left: 450px;margin-bottom: 30px; height: 420px;width: 465px;margin-bottom: 20px;" src="/home/miracle/Desktop/html_Practise/Instagram/IMG_20211025_153412_334.jpg" alt="">
+    </div>
+    <div class="likes">
+        <input type="button" value="&#10084;" style="cursor: pointer; margin-left: 450px;font-size: 25px;margin-top: 75px;margin-bottom: 20px; padding: 0px 35px 0px 0px;background-color: transparent;border: none;" onclick="share()">
+        <input type="button" value="&#x1F4AC;" style="cursor: pointer; margin-left: 470px;font-size: 25px;margin-top: 75px;margin-bottom: 20px; padding: 0px 35px 0px 0px;background-color: transparent;border: none;" onclick="share()">
+        <input type="button" value="&#x279A;" style="cursor: pointer; margin-left: 490px;font-size: 30px;margin-top: 70px;margin-bottom: 20px; padding: 0px 35px 0px 0px;background-color: transparent;border: none;" onclick="share()"><br>
+        <p style="display: inline-block;margin-left: 555px;width: 300px;margin-top: -45px;">liked by sai_naidu and 99 others</p>
+    </div>
+    <div class="feedown">
+        <img style="margin-left: 450px;margin-bottom: 10px; height: 30px;width: 30px; border-radius: 50%;" src="/home/miracle/Desktop/html_Practise/Instagram/vasu.jpg" alt="">
+        <input type="button" style="cursor: pointer; margin-left: 440px;font-size: 16px;background-color: transparent;border: none;width: 120px;" value="Vasu_Nainala" onclick="viewProfile()">
+    </div>
+    <div class="feed">
+     <img style="margin-left: 450px;margin-bottom: 30px; height: 480px;width: 465px;margin-bottom: 20px;" src="/home/miracle/Desktop/html_Practise/Instagram/vasu1.jpg" alt="">
+    </div>
+    <div class="likes">
+        <input type="button" value="&#10084;" style="cursor: pointer; margin-left: 450px;font-size: 25px;margin-top: 135px;padding: 0px 35px 0px 0px;background-color: transparent;border: none;" onclick="share()">
+        <input type="button" value="&#x1F4AC;" style="cursor: pointer; margin-left: 470px;font-size: 25px;margin-top: 135px;padding: 0px 35px 0px 0px;background-color: transparent;border: none;" onclick="share()">
+        <input type="button" value="&#x279A;" style="cursor: pointer; margin-left: 490px;font-size: 30px;margin-top: 130px;padding: 0px 35px 0px 0px;background-color: transparent;border: none;" onclick="share()"><br>
+        <p style="display: inline-block;margin-left: 555px;width: 300px;margin-top: -23px;">liked by vinay_dande and 139 others</p>
+    </div>
+    <div class="feedown">
+        <img style="margin-left: 450px;margin-bottom: 10px; height: 30px;width: 30px; border-radius: 50%;" src="/home/miracle/Desktop/html_Practise/Instagram/sai.jpg" alt="">
+        <input type="button" style="margin-left: 440px;font-size: 20px;background-color: transparent;border: none;width: 100px;cursor: pointer;" value="sai_naidu" onclick="viewProfile1()">
+    </div>
+    <div class="feed">
+     <img style="margin-left: 430px;margin-bottom: 30px; height: 450px;width: 565px;margin-bottom: 20px;" src="/home/miracle/Desktop/html_Practise/Instagram/group.jpg" alt="">
+    </div>
+    <div class="likes">
+        <input type="button" value="&#10084;" style="cursor: pointer; margin-left: 450px;font-size: 25px;margin-top: 40px;padding: 0px 35px 0px 0px;background-color: transparent;border: none;" onclick="share()">
+        <input type="button" value="&#x1F4AC;" style="cursor: pointer; margin-left: 470px;font-size: 25px;margin-top: 40px;padding: 0px 35px 0px 0px;background-color: transparent;border: none;" onclick="share()">
+        <input type="button" value="&#x279A;" style="cursor: pointer; margin-left: 490px;font-size: 30px;margin-top: 35px;padding: 0px 35px 0px 0px;background-color: transparent;border: none;" onclick="share()"><br>
+        <p style="display: inline-block;margin-left: 555px;width: 300px;margin-top: -23px;">liked by Kiran_nainala and 365 others</p>
+    </div>
+    </div> 
+    <div class="options">
+     <input type="button" value="&#x2616;" style="cursor: pointer; font-size: 55px;margin-top: 25px;padding: 0px 35px 0px 0px;background-color: transparent;border: none;width: 50px;" onclick="share()">
+    <input type="button" value="&#128269;" style="cursor: pointer; margin-left: 65px;font-size: 35px;margin-top: 25px;padding: 0px 35px 0px 0px;background-color: transparent;border: none;width: 50px;" onclick="share()">
+    <input type="button" value="&#x2B;" style="cursor: pointer; margin-left: 125px;font-size: 55px;margin-top: 15px;padding: 0px 35px 0px 0px;background-color: transparent;border: none;" onclick="share()" >
+    <input type="button" value="&#x1F39E;" style="cursor: pointer; margin-left: 170px;font-size: 38px;margin-top: 15px;padding: 0px 35px 0px 0px;background-color: transparent;border: none;" onclick="share()" >   
+    <img onclick="viewProfile()" style="cursor: pointer; margin-top: 30px; margin-left: 210px; height: 45px;width: 45px;border-radius: 50%;" src="/home/miracle/Desktop/html_Practise/Instagram/vasu.jpg" alt="">
+    </div>
+</body>
+</html>
